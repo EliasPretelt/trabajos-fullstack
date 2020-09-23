@@ -1,0 +1,211 @@
+@font-face{
+    font-family:cavi;
+    src: url(../font/CaviarDreams_Bold.ttf);
+}
+
+@font-face{
+    font-family:cavi;
+    src: url(../font/MINECRAFT\ PE.ttf);
+}
+
+* {
+  margin: 0;
+  box-sizing: 0;
+  box-sizing: border-box;
+  font-family: "cavi";
+}
+body.normal {
+  align-items: flex-end;
+}
+body.retro {
+  background: url(../img/cyberpunk-2077-samurai-jacket.jpg);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+/* nav */
+nav{
+    background-color: transparent;
+    color: black;
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 40px;
+	box-shadow: 0 0 8px #333;
+        
+}
+h1{
+    color: whitesmoke;
+}
+header {
+  width: 600px;
+  border: 1px solid black;
+  border-radius: 25px;
+  margin: 50px auto 0 auto;
+  padding: 20px;
+  border-bottom: none;
+  background-color: skyblue;
+}
+header > h3 {
+  text-align: center;
+  margin-bottom: 18px;
+  font-size: 30px;
+}
+header > .sub-ansalo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+header > .sub-ansalo > label {
+  font-size: 25px;
+  font-weight: 600;
+}
+header > .sub-ansalo > input {
+  font-size: 25px;
+  padding: 5px 10px;
+  background-color:white;
+}
+header > .sub-ansalo > input {
+  font-size: 22px;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+header > .sub-ansalo > input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/*MAni*/
+main {
+  width: 600px;
+  border: 1px solid black;
+  margin: 0 auto;
+  border-top: none;
+  background-color: skyblue;
+  color: rgb(122, 112, 112);
+  margin-bottom: 50px;
+  border-radius: 25px; 
+}
+
+/*los SWTICH */
+main > .swtich-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.switchBtn {
+  position: relative;
+  display: inline-block;
+  width: 110px;
+  height: 34px;
+}
+.switchBtn input {
+  display: none;
+}
+.slide {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.4s;
+  padding: 7px;
+  color: white;
+  border: 1px solid #fff;
+  
+}
+.slide:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 78px;
+  bottom: 6px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+input:checked + .slide {
+  background-color: transparent;
+  padding-left: 40px;
+}
+
+input:checked + .slide:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+  left: -20px;
+}
+.slide.round {
+  border-radius: 34px;
+}
+.slide.round:before {
+  border-radius: 50%;
+}
+
+/* butones*/
+main > .botones-ansalo > .sub-grupo {
+  display: flex;
+  width: 60%;
+  margin: 20px auto;
+  justify-content: space-between;
+}
+main > .botones-ansalo > .sub-grupo > button {
+  font-size: 15px;
+  padding: 5px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: 0.4s all;
+  background-color: white;
+}
+main > .botones-ansalo > .sub-grupo > button:focus {
+  outline: none;
+}
+main > .botones-ansalo > .sub-grupo > button:active {
+  transform: scale(0.98);
+}
+
+
+
+/*dark*/
+
+main.dark {
+  background-color: black;
+  color: white;
+}
+header.dark {
+  background-color: black;
+  color: white;
+}
+
+  /*retro*/
+  
+main.retro {
+  background-color: transparent;
+  color: whitesmoke;
+}
+
+
+header.retro {
+  background-color: transparent;
+  color: whitesmoke;
+}
+
+
+/* footer */
+.footer {
+	margin-top: 20px;
+	padding: 20px 0;
+	box-shadow: 0 0 8px #333;
+}
+.footer > p {
+  text-align: center;
+  font-size: 30px;
+}
